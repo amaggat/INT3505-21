@@ -17,31 +17,16 @@ public class MinMaxServer {
 
     public static void main(String[] args) throws IOException {
         ServerSocket listener = new ServerSocket(PORT);
-        Socket client = listener.accept();
-        PrintWriter out = new PrintWriter(client.getOutputStream(), true);
-        BufferedReader in = new BufferedReader(new InputStreamReader(client.getInputStream()));
 
+//        PrintWriter out = new PrintWriter(client.getOutputStream(), true);
+//        BufferedReader input = new BufferedReader(new InputStreamReader(client.getInputStream()));
+//        ArrayList<Integer> numberList = new ArrayList<>();
 
-        ArrayList<Integer> numberList= new ArrayList<>();
-
-        while (true){
-            try {
-                ObjectInputStream objectInput = new ObjectInputStream(client.getInputStream());
-                try {
-                    Object object = objectInput.readObject();
-                    numberList =  (ArrayList<Integer>) object;
-                    System.out.println(numberList);
-
-                    MinMax results = MinMax.findMinAndMax(numberList);
-                    out.println("Min: " + results.getMin() + ", Max: " + results.getMax());
-                } catch (ClassNotFoundException e) {
-                    e.printStackTrace();
-                }
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+        while (true) {
+            Socket client = listener.accept();
+            ClientHandler clientThread = new ClientHandler(client);
+            clientHandlers.add(clientThread);
+            service.execute(clientThread);
         }
     }
-
-
 }
