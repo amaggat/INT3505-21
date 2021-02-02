@@ -1,8 +1,8 @@
-package OldFile.HelloServer.client;
+package HelloServer.client;
 
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
-import OldFile.HelloServer.hello.Hello;
+import HelloServer.hello.Hello;
 
 public class HelloClient {
     private HelloClient() {};

@@ -1,4 +1,4 @@
-package OldFile.MinMaxRmiServer.pair;
+package MinMaxRmiServer.pair;
 
 import java.io.Serializable;
 import java.rmi.Remote;

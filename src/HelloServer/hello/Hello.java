@@ -1,4 +1,4 @@
-package OldFile.HelloServer.hello;
+package HelloServer.hello;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;

@@ -1,4 +1,4 @@
-package OldFile.MinMaxServer.Model;
+package MinMaxServer.Model;
 
 import java.util.ArrayList;
 

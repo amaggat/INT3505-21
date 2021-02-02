@@ -1,4 +1,4 @@
-package OldFile.MinMaxServer.MultipleClientOneServer;
+package MinMaxServer.MultipleClientOneServer;
 
 import java.io.*;
 import java.net.ServerSocket;
@@ -16,8 +16,8 @@ public class MinMaxServer {
     public static void main(String[] args) throws IOException {
         ServerSocket listener = new ServerSocket(PORT);
 
-//        PrintWriter out = new PrintWriter(OldFile.HelloServer.OldFile.MinMaxRmiServer.client.getOutputStream(), true);
-//        BufferedReader input = new BufferedReader(new InputStreamReader(OldFile.HelloServer.OldFile.MinMaxRmiServer.client.getInputStream()));
+//        PrintWriter out = new PrintWriter(HelloServer.MinMaxRmiServer.client.getOutputStream(), true);
+//        BufferedReader input = new BufferedReader(new InputStreamReader(HelloServer.MinMaxRmiServer.client.getInputStream()));
 //        ArrayList<Integer> numberList = new ArrayList<>();
 
         while (true) {

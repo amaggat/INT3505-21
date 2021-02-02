@@ -1,4 +1,4 @@
-package OldFile.MinMaxServer.MultipleClientOneServer;
+package MinMaxServer.MultipleClientOneServer;
 
 import java.io.BufferedReader;
 import java.io.IOException;

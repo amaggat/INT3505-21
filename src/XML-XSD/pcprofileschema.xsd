@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="https://www.w3schools.com"
+           xmlns="https://www.w3schools.com"
+           elementFormDefault="qualified">
+
+    <xs:element name="pcprofile">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="cpu" type="xs:string" />
+                <xs:element name="mainboard" type="xs:string" />
+                <xs:element name="cooler" type="xs:string" />
+                <xs:element name="rams">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element maxOccurs="unbounded" name="ram" type="xs:string" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="drives">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="hard-disk-drives">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="hdd" type="xs:string" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="solid-state-drives">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="ssd" type="xs:string" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="gpu" type="xs:string" />
+                <xs:element name="power-supply-unit" type="xs:string" />
+                <xs:element name="case" type="xs:string" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

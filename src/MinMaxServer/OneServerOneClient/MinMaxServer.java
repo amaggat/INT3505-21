@@ -1,6 +1,6 @@
-package OldFile.MinMaxServer.OneServerOneClient;
+package MinMaxServer.OneServerOneClient;
 
-import OldFile.MinMaxServer.Model.MinMax;
+import MinMaxServer.Model.MinMax;
 
 import java.io.*;
 import java.net.ServerSocket;

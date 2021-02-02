@@ -1,6 +1,6 @@
-package OldFile.HelloServer.server;
+package HelloServer.server;
 
-import OldFile.HelloServer.hello.Hello;
+import HelloServer.hello.Hello;
 import java.rmi.server.*;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
@@ -26,6 +26,6 @@ public class HelloServer implements Hello {
          Hello stub = (Hello)UnicastRemoteObject.exportObject(obj, 0);
 	     Registry registry = LocateRegistry.getRegistry();
          registry.rebind("Hello", stub);
-		 System.out.println("OldFile.HelloServer ready!");
+		 System.out.println("HelloServer ready!");
 	}
 }

@@ -1,6 +1,6 @@
-package OldFile.MinMaxRmiServer.server;
+package MinMaxRmiServer.server;
 
-import OldFile.MinMaxRmiServer.pair.Pair;
+import MinMaxRmiServer.pair.Pair;
 
 import java.rmi.AlreadyBoundException;
 import java.rmi.RemoteException;

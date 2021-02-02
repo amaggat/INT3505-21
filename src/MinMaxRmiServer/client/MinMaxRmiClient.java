@@ -1,6 +1,6 @@
-package OldFile.MinMaxRmiServer.client;
+package MinMaxRmiServer.client;
 
-import OldFile.MinMaxRmiServer.pair.Pair;
+import MinMaxRmiServer.pair.Pair;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
