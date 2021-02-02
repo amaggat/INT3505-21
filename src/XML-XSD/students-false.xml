@@ -16,6 +16,6 @@
 
     <email>18021174@vnu.edu.vn</email>
 
-<!--    The content of element "student" is not complete-->
+<!--    The content of element "student" is not complete. One of '{"https://www.w3schools.com":contacts}' is expected ""-->
 
 </student>
