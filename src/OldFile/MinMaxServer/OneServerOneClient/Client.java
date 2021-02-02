@@ -1,10 +1,8 @@
-package OneServerOneClient;
+package OldFile.MinMaxServer.OneServerOneClient;
 
 import java.io.*;
-import java.lang.reflect.Array;
 import java.net.Socket;
 import java.util.ArrayList;
-import java.util.List;
 
 public class Client {
 

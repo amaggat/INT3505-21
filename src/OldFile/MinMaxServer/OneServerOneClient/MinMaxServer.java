@@ -1,11 +1,11 @@
-package OneServerOneClient;
+package OldFile.MinMaxServer.OneServerOneClient;
+
+import OldFile.MinMaxServer.Model.MinMax;
 
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
-
-import Model.MinMax;
 
 public class MinMaxServer {
 
@@ -26,7 +26,6 @@ public class MinMaxServer {
                     Object object = objectInput.readObject();
                     numberList =  (ArrayList<Integer>) object;
                     System.out.println(numberList);
-
                     MinMax results = MinMax.findMinAndMax(numberList);
                     out.println("Min: " + results.getMin() + ", Max: " + results.getMax());
                 } catch (ClassNotFoundException e) {
@@ -37,24 +36,4 @@ public class MinMaxServer {
             }
         }
     }
-
-//    public static MinMax findMinAndMax(ArrayList<Integer> numberList)
-//    {
-//        Integer min = numberList.get(0);
-//        Integer max = numberList.get(0);
-//
-//        for(Integer number : numberList)
-//        {
-//            if(number < min)
-//            {
-//                min = number;
-//            }
-//            if (number > max)
-//            {
-//                max = number;
-//            }
-//        }
-//
-//        return new MinMax(min, max);
-//    }
 }
