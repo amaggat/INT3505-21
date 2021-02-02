@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<student
+        xmlns="https://www.w3schools.com"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="https://www.w3schools.com/xml student.xsd"
+>
+
+    <name>Trần Trung Thành</name>
+
+    <dob>2000-09-18</dob>
+
+    <student-id>18021174</student-id>
+
+    <gender>Male</gender>
+
+    <email>18021174@vnu.edu.vn</email>
+
+<!--    The content of element "student" is not complete-->
+
+</student>
